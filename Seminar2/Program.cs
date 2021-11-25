@@ -1,4 +1,5 @@
-﻿int number1 = 13;
+﻿// 2. Даны два числа. Показать большее и меньшее число
+int number1 = 13;
 int number2 = 8;
 int max = number1;
 int min = number2;
