@@ -1,7 +1,7 @@
 ﻿// 4. Найти максимальное из трех чисел
 int A = 1;
 int B = 77;
-int C = 9;
+int C = 91;
 int max = C;
 
 if (A > max) max = A;
