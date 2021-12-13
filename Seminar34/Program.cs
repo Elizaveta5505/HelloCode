@@ -5,7 +5,7 @@ void FillArray(int[] array)
     int index = 0;
     while (index < length)
     {
-         array [index] = new Random().Next(0, 10);
+         array [index] = new Random().Next(- 10, 10);
          index++;
     }
 }
@@ -23,10 +23,21 @@ void PrintArray(int[] array)
 int [] array = new int [12];
 FillArray(array);
 PrintArray(array);
-int sum = 0;
+int sumPositiveNumbers = 0;
+int sumNegativeNumbers = 0;
 for (int i = 0; i < array.Length; i++)
 {
-    sum = sum + array[i];
+    if (array[i] > 0)
+    {
+        sumPositiveNumbers = sumPositiveNumbers + array[i];
+    }
+    else
+    {
+        sumNegativeNumbers = sumNegativeNumbers + array [i];
+    }
+
 }
-Console.Write("Сумма элементов массива равна: ");
-Console.WriteLine(sum);
+Console.Write("Сумма положительных элементов массива равна: ");
+Console.WriteLine(sumPositiveNumbers);
+Console.Write("Сумма отрицательных элементов массива равна: ");
+Console.WriteLine(sumNegativeNumbers);
