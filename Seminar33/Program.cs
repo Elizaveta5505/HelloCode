@@ -16,12 +16,12 @@ void PrintArray(int[] array)
     int position = 0;
     while (position < count)
     {
-         Console.WriteLine(array [position]);
+         Console.Write(array [position]);
          position++;
     }
+    Console.WriteLine();
 }
 int [] array = new int [8];
 
 FillArray(array);
 PrintArray(array);
-Console.WriteLine();
