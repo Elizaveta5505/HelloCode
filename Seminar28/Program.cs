@@ -4,8 +4,8 @@ int number = int.Parse(Console.ReadLine());
 int result = 0;
 while (number > 0)
 {
+    number = number/10;
     result++;
-    number = (number/10);
 }
 Console.Write ("Количество цифр в числе: ");
 Console.WriteLine(result);
